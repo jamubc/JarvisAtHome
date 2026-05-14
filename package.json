@@ -1,0 +1,18 @@
+{
+  "name": "jarvis",
+  "version": "0.1.0",
+  "description": "Local-first AI assistant — voice commands → intent routing → hardware/system/LLM execution → TTS feedback",
+  "private": true,
+  "scripts": {
+    "voice": "node stages/01-voice-command/index.js",
+    "voice:base": "node stages/01-voice-command/index.js --model base.en",
+    "router": "node stages/02-router/index.js",
+    "hardware": "node stages/03-hardware/index.js",
+    "system": "node stages/04-system/index.js",
+    "llm": "node stages/05-llm/index.js",
+    "tts": "node stages/06-tts/index.js",
+    "start": "node index.js"
+  },
+  "keywords": ["jarvis", "voice-assistant", "local", "offline", "whisper", "mqtt", "iot"],
+  "license": "MIT"
+}

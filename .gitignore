@@ -1,0 +1,10 @@
+node_modules/
+.env
+*.log
+.tmp_*
+repomix-output.xml
+
+# Voice models and binaries
+stages/01-voice-command/models/*.bin
+stages/06-tts/models/
+stages/06-tts/piper/

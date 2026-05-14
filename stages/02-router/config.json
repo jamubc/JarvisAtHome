@@ -1,0 +1,14 @@
+{
+  "mqtt": {
+    "broker": "mqtt://localhost:1883",
+    "subscriptions": [
+      "jarvis/intent/#"
+    ]
+  },
+  "llm": {
+    "provider": "openrouter",
+    "baseUrl": "https://openrouter.ai/api/v1/chat/completions",
+    "model": "nvidia/nemotron-3-super-120b-a12b:free",
+    "systemPrompt": "You are Jarvis, a helpful AI assistant. Keep responses concise — under 2 sentences when possible. You are speaking out loud, so be conversational, not robotic."
+  }
+}

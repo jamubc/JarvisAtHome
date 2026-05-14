@@ -1,0 +1,20 @@
+{
+  "mqtt": {
+    "broker": "mqtt://localhost:1883",
+    "topic": "jarvis/tts/speak"
+  },
+  "activeEngine": "piper",
+  "engines": {
+    "macos_say": {
+      "voice": "Daniel", 
+      "rate": 185
+    },
+    "piper": {
+      "modelPath": "./models/en_US-lessac-medium.onnx",
+      "executable": "./piper/piper"
+    },
+    "windows_native": {
+      "voice": ""
+    }
+  }
+}

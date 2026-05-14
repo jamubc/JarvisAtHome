@@ -1,0 +1,46 @@
+{
+  "_comment": "Declarative routing table — add a new device by adding one line. No code changes needed.",
+
+  "turn_on_led": {
+    "target": "hardware",
+    "topic": "jarvis/hardware/desk/led",
+    "payload": "ON",
+    "response": "LED is now on."
+  },
+  "turn_off_led": {
+    "target": "hardware",
+    "topic": "jarvis/hardware/desk/led",
+    "payload": "OFF",
+    "response": "LED is now off."
+  },
+  "turn_on_lights": {
+    "target": "hardware",
+    "topic": "jarvis/hardware/office/lights",
+    "payload": "ON",
+    "response": "Office lights are on."
+  },
+  "turn_off_lights": {
+    "target": "hardware",
+    "topic": "jarvis/hardware/office/lights",
+    "payload": "OFF",
+    "response": "Office lights are off."
+  },
+
+  "get_time": {
+    "target": "local",
+    "handler": "time",
+    "response": null
+  },
+  "sleep": {
+    "target": "local",
+    "handler": "sleep",
+    "response": null
+  },
+
+  "check_downloads": {
+    "target": "system",
+    "topic": "jarvis/system/check_downloads",
+    "payload": "{}",
+    "response": null
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "wakeWord": "jarvis",
+  "wakeWordVariants": [
+    "jarvis",
+    "jarves",
+    "jarvs",
+    "Jervis"
+  ],
+  "awakeDurationMs": 10000,
+  "sampleRate": 16000,
+  "silenceThreshold": 200,
+  "silenceToleranceFrames": 4,
+  "useGpu": true,
+  "maxThreads": 4,
+  "pingFrequency": 880,
+  "pingDurationMs": 150,
+  "mqtt": {
+    "broker": "mqtt://localhost:1883",
+    "enabled": true
+  },
+  "activeModel": "base.en",
+  "models": {
+    "tiny.en": {
+      "file": "ggml-tiny.en.bin",
+      "size": "74 MB",
+      "speed": "fastest",
+      "notes": "Best for short commands. ~40ms inference on M4 Pro."
+    },
+    "base.en": {
+      "file": "ggml-base.en.bin",
+      "size": "141 MB",
+      "speed": "fast",
+      "notes": "Better accuracy for longer phrases. ~80ms inference on M4 Pro."
+    },
+    "small.en": {
+      "file": "ggml-small.en.bin",
+      "size": "466 MB",
+      "speed": "moderate",
+      "notes": "High accuracy. Download: curl -L -o models/ggml-small.en.bin https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-small.en.bin"
+    },
+    "medium.en": {
+      "file": "ggml-medium.en.bin",
+      "size": "1.5 GB",
+      "speed": "slow",
+      "notes": "Very high accuracy. Download: curl -L -o models/ggml-medium.en.bin https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-medium.en.bin"
+    }
+  }
+}

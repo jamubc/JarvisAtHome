@@ -1,0 +1,14 @@
+{
+  "name": "jarvis-router",
+  "version": "0.1.0",
+  "description": "Stage 02 — Central Router / Main Brain. Routes intents to hardware, system, or LLM.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"See verification commands in README.md\""
+  },
+  "dependencies": {
+    "mqtt": "^5.0.0",
+    "dotenv": "^16.0.0"
+  }
+}
