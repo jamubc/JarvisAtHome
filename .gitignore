@@ -8,3 +8,7 @@ repomix-output.xml
 stages/01-voice-command/models/*.bin
 stages/06-tts/models/
 stages/06-tts/piper/
+stages/06-tts/cache/
+stages/06-tts/usage.json
+stages/02-router/data/
+stages/02-router/bench/results/

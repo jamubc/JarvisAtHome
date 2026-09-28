@@ -2,6 +2,7 @@ const { EventEmitter } = require('events');
 const fs = require('fs');
 const path = require('path');
 const { playSound, ensurePingSound } = require('./sounds');
+const { matchCommand } = require('./matcher');
 
 /**
  * Commander — loads commands, matches intents, manages wake state.
@@ -79,17 +80,7 @@ class Commander extends EventEmitter {
    * Returns the matched command or null.
    */
   matchCommand(text) {
-    const lower = text.toLowerCase().trim();
-    for (const cmd of this.commands) {
-      for (const phrase of cmd.phrases) {
-        if (phrase instanceof RegExp) {
-          if (phrase.test(lower)) return cmd;
-        } else if (lower.includes(phrase)) {
-          return cmd;
-        }
-      }
-    }
-    return null;
+    return matchCommand(text, this.commands);
   }
 
   /**

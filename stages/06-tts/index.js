@@ -3,6 +3,9 @@ const fs = require('fs');
 const mqtt = require('mqtt');
 const { speak } = require('./src/engine');
 
+// Load ELEVENLABS_API_KEY etc. from the project-root .env (Node >= 20.12); optional.
+try { process.loadEnvFile(path.resolve(__dirname, '..', '..', '.env')); } catch { /* no .env — fine */ }
+
 const config = JSON.parse(fs.readFileSync(path.join(__dirname, 'config.json'), 'utf8'));
 
 // Audio Queue to prevent overlapping speech
@@ -10,7 +13,7 @@ const queue = [];
 let isSpeaking = false;
 
 async function checkPiperSetup() {
-  if (config.activeEngine !== 'piper') return;
+  if (config.activeEngine !== 'piper' && config.fallbackEngine !== 'piper') return;
   const piperPath = path.resolve(__dirname, 'piper');
   const modelsPath = path.resolve(__dirname, 'models');
   const modelFile = path.resolve(__dirname, config.engines.piper.modelPath);
