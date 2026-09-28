@@ -6,7 +6,7 @@
   "activeEngine": "piper",
   "engines": {
     "macos_say": {
-      "voice": "Daniel", 
+      "voice": "Daniel",
       "rate": 185
     },
     "piper": {
@@ -15,6 +15,15 @@
     },
     "windows_native": {
       "voice": ""
+    },
+    "elevenlabs": {
+      "modelId": "eleven_v4_turbo",
+      "voiceId": "",
+      "outputFormat": "mp3_44100_128",
+      "monthlyCharacterCap": 100000,
+      "cacheDir": "./cache",
+      "usageFile": "./usage.json"
     }
-  }
+  },
+  "fallbackEngine": "piper"
 }

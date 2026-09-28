@@ -1,0 +1,472 @@
+[
+ {
+  "text": "jarvis what time is it",
+  "intent": "get_time"
+ },
+ {
+  "text": "what's the time",
+  "intent": "get_time"
+ },
+ {
+  "text": "jarvis tell me the time",
+  "intent": "get_time"
+ },
+ {
+  "text": "what is the time please",
+  "intent": "get_time"
+ },
+ {
+  "text": "current time",
+  "intent": "get_time"
+ },
+ {
+  "text": "jarvis do you have the time",
+  "intent": "get_time"
+ },
+ {
+  "text": "hey jarvis what time is it right now",
+  "intent": "get_time"
+ },
+ {
+  "text": "jarvis can you tell me what time it is",
+  "intent": "get_time"
+ },
+ {
+  "text": "whats the time jarvis",
+  "intent": "get_time"
+ },
+ {
+  "text": "jarvis time check",
+  "intent": "get_time"
+ },
+ {
+  "text": "jarvis turn on the lights",
+  "intent": "turn_on_lights"
+ },
+ {
+  "text": "lights on",
+  "intent": "turn_on_lights"
+ },
+ {
+  "text": "turn on lights",
+  "intent": "turn_on_lights"
+ },
+ {
+  "text": "jarvis switch the lights on",
+  "intent": "turn_on_lights"
+ },
+ {
+  "text": "jarvis can you turn the lights on",
+  "intent": "turn_on_lights"
+ },
+ {
+  "text": "put the lights on jarvis",
+  "intent": "turn_on_lights"
+ },
+ {
+  "text": "jarvis it's dark in here turn on the lights",
+  "intent": "turn_on_lights"
+ },
+ {
+  "text": "jarvis light up the office",
+  "intent": "turn_on_lights"
+ },
+ {
+  "text": "jarvis turn off the lights",
+  "intent": "turn_off_lights"
+ },
+ {
+  "text": "lights off",
+  "intent": "turn_off_lights"
+ },
+ {
+  "text": "turn off lights",
+  "intent": "turn_off_lights"
+ },
+ {
+  "text": "kill the lights",
+  "intent": "turn_off_lights"
+ },
+ {
+  "text": "jarvis switch the lights off",
+  "intent": "turn_off_lights"
+ },
+ {
+  "text": "jarvis shut off the lights",
+  "intent": "turn_off_lights"
+ },
+ {
+  "text": "jarvis can you turn the lights off",
+  "intent": "turn_off_lights"
+ },
+ {
+  "text": "jarvis I'm leaving turn off the lights",
+  "intent": "turn_off_lights"
+ },
+ {
+  "text": "turn on the led",
+  "intent": "turn_on_led"
+ },
+ {
+  "text": "led on",
+  "intent": "turn_on_led"
+ },
+ {
+  "text": "jarvis turn on led",
+  "intent": "turn_on_led"
+ },
+ {
+  "text": "light the led",
+  "intent": "turn_on_led"
+ },
+ {
+  "text": "jarvis switch on the desk led",
+  "intent": "turn_on_led"
+ },
+ {
+  "text": "jarvis enable the led",
+  "intent": "turn_on_led"
+ },
+ {
+  "text": "turn off the led",
+  "intent": "turn_off_led"
+ },
+ {
+  "text": "led off",
+  "intent": "turn_off_led"
+ },
+ {
+  "text": "jarvis turn off led",
+  "intent": "turn_off_led"
+ },
+ {
+  "text": "kill the led",
+  "intent": "turn_off_led"
+ },
+ {
+  "text": "jarvis switch off the desk led",
+  "intent": "turn_off_led"
+ },
+ {
+  "text": "jarvis disable the led",
+  "intent": "turn_off_led"
+ },
+ {
+  "text": "what's the weather in paris",
+  "intent": "weather",
+  "slots": {
+   "city": "paris"
+  }
+ },
+ {
+  "text": "jarvis weather in tokyo",
+  "intent": "weather",
+  "slots": {
+   "city": "tokyo"
+  }
+ },
+ {
+  "text": "weather for new york",
+  "intent": "weather",
+  "slots": {
+   "city": "new york"
+  }
+ },
+ {
+  "text": "jarvis what's the weather in london",
+  "intent": "weather",
+  "slots": {
+   "city": "london"
+  }
+ },
+ {
+  "text": "whats the weather in berlin",
+  "intent": "weather",
+  "slots": {
+   "city": "berlin"
+  }
+ },
+ {
+  "text": "jarvis how is the weather in sydney",
+  "intent": "weather",
+  "slots": {
+   "city": "sydney"
+  }
+ },
+ {
+  "text": "jarvis what's it like outside in chicago",
+  "intent": "weather",
+  "slots": {
+   "city": "chicago"
+  }
+ },
+ {
+  "text": "jarvis is it raining in seattle",
+  "intent": "weather",
+  "slots": {
+   "city": "seattle"
+  }
+ },
+ {
+  "text": "jarvis open spotify",
+  "intent": "mac_open",
+  "slots": {
+   "target": "spotify"
+  }
+ },
+ {
+  "text": "open the calculator",
+  "intent": "mac_open",
+  "slots": {
+   "target": "calculator"
+  }
+ },
+ {
+  "text": "jarvis open youtube",
+  "intent": "mac_open",
+  "slots": {
+   "target": "youtube"
+  }
+ },
+ {
+  "text": "open safari",
+  "intent": "mac_open",
+  "slots": {
+   "target": "safari"
+  }
+ },
+ {
+  "text": "jarvis please open notes",
+  "intent": "mac_open",
+  "slots": {
+   "target": "notes"
+  }
+ },
+ {
+  "text": "jarvis launch slack",
+  "intent": "mac_open",
+  "slots": {
+   "target": "slack"
+  }
+ },
+ {
+  "text": "jarvis start up terminal",
+  "intent": "mac_open",
+  "slots": {
+   "target": "terminal"
+  }
+ },
+ {
+  "text": "open google",
+  "intent": "mac_open",
+  "slots": {
+   "target": "google"
+  }
+ },
+ {
+  "text": "jarvis search wikipedia for black holes",
+  "intent": "wikipedia_search",
+  "slots": {
+   "topic": "black holes"
+  }
+ },
+ {
+  "text": "look up on wikipedia the roman empire",
+  "intent": "wikipedia_search",
+  "slots": {
+   "topic": "roman empire"
+  }
+ },
+ {
+  "text": "jarvis wikipedia photosynthesis",
+  "intent": "wikipedia_search",
+  "slots": {
+   "topic": "photosynthesis"
+  }
+ },
+ {
+  "text": "search wikipedia for alan turing",
+  "intent": "wikipedia_search",
+  "slots": {
+   "topic": "alan turing"
+  }
+ },
+ {
+  "text": "jarvis look up napoleon on wikipedia",
+  "intent": "wikipedia_search",
+  "slots": {
+   "topic": "napoleon"
+  }
+ },
+ {
+  "text": "jarvis what does wikipedia say about volcanoes",
+  "intent": "wikipedia_search",
+  "slots": {
+   "topic": "volcanoes"
+  }
+ },
+ {
+  "text": "jarvis tell me a joke",
+  "intent": "tell_joke"
+ },
+ {
+  "text": "tell a joke",
+  "intent": "tell_joke"
+ },
+ {
+  "text": "make me laugh",
+  "intent": "tell_joke"
+ },
+ {
+  "text": "do you know any jokes",
+  "intent": "tell_joke"
+ },
+ {
+  "text": "jarvis got any jokes",
+  "intent": "tell_joke"
+ },
+ {
+  "text": "jarvis say something funny",
+  "intent": "tell_joke"
+ },
+ {
+  "text": "go to sleep",
+  "intent": "sleep"
+ },
+ {
+  "text": "jarvis sleep now",
+  "intent": "sleep"
+ },
+ {
+  "text": "goodbye",
+  "intent": "sleep"
+ },
+ {
+  "text": "jarvis that's all for now",
+  "intent": "sleep"
+ },
+ {
+  "text": "jarvis go to sleep please",
+  "intent": "sleep"
+ },
+ {
+  "text": "jarvis what time does the store open today",
+  "intent": "chat"
+ },
+ {
+  "text": "jarvis is the front door open right now",
+  "intent": "chat"
+ },
+ {
+  "text": "jarvis is the window open",
+  "intent": "chat"
+ },
+ {
+  "text": "what's the capital of france",
+  "intent": "chat"
+ },
+ {
+  "text": "jarvis how do I calculate a load resistor for an led",
+  "intent": "chat"
+ },
+ {
+  "text": "jarvis why is the sky blue",
+  "intent": "chat"
+ },
+ {
+  "text": "jarvis the lights in that movie were amazing",
+  "intent": "chat"
+ },
+ {
+  "text": "jarvis how many lights does a christmas tree need",
+  "intent": "chat"
+ },
+ {
+  "text": "jarvis my led keeps flickering what could cause it",
+  "intent": "chat"
+ },
+ {
+  "text": "jarvis who wrote hamlet",
+  "intent": "chat"
+ },
+ {
+  "text": "jarvis explain how a transistor works",
+  "intent": "chat"
+ },
+ {
+  "text": "jarvis what should I cook for dinner",
+  "intent": "chat"
+ },
+ {
+  "text": "jarvis remind me what we talked about",
+  "intent": "chat"
+ },
+ {
+  "text": "jarvis how are you today",
+  "intent": "chat"
+ },
+ {
+  "text": "jarvis what's your favourite colour",
+  "intent": "chat"
+ },
+ {
+  "text": "jarvis is it going to be a good week",
+  "intent": "chat"
+ },
+ {
+  "text": "jarvis how long does it take to fly to japan",
+  "intent": "chat"
+ },
+ {
+  "text": "jarvis what does led stand for",
+  "intent": "chat"
+ },
+ {
+  "text": "jarvis translate hello into spanish",
+  "intent": "chat"
+ },
+ {
+  "text": "jarvis I had a strange dream last night",
+  "intent": "chat"
+ },
+ {
+  "text": "thanks jarvis that was helpful",
+  "intent": "chat"
+ },
+ {
+  "text": "jarvis what's the difference between ac and dc",
+  "intent": "chat"
+ },
+ {
+  "text": "jarvis give me a fun fact",
+  "intent": "chat"
+ },
+ {
+  "text": "jarvis I'm feeling tired",
+  "intent": "chat"
+ },
+ {
+  "text": "jarvis can you help me with my homework",
+  "intent": "chat"
+ },
+ {
+  "text": "jarvis what day is it",
+  "intent": "chat"
+ },
+ {
+  "text": "jarvis how far away is the moon",
+  "intent": "chat"
+ },
+ {
+  "text": "jarvis tell me about the history of the internet",
+  "intent": "chat"
+ },
+ {
+  "text": "jarvis what's two plus two",
+  "intent": "chat"
+ },
+ {
+  "text": "jarvis do I need an umbrella tomorrow",
+  "intent": "chat"
+ }
+]

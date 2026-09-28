@@ -6,6 +6,7 @@ require('dotenv').config({ path: path.resolve(__dirname, '..', '..', '.env') });
 
 const mqtt = require('mqtt');
 const { chat } = require('./src/llm');
+const { logUtterance } = require('./src/decide/log');
 
 // ─────────────────────────────────────────────────────────
 // Load config + routes
@@ -68,6 +69,9 @@ function main() {
   client.on('message', async (topic, message) => {
     try {
       const payload = JSON.parse(message.toString());
+      if (payload.transcript) {
+        logUtterance({ transcript: payload.transcript, topic, intent: payload.id || 'chat' });
+      }
       const timestamp = new Date().toLocaleTimeString('en-US', { hour12: true, hour: '2-digit', minute: '2-digit', second: '2-digit' });
 
       // ───────────────────────────────────────────────────
